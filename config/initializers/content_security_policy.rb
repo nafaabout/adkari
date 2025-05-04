@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+# The content below is commented out but this file should not be considered empty
+
 # Be sure to restart your server when you modify this file.
 
 # Define an application-wide content security policy.

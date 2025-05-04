@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
-require "rubygems"
+# frozen_string_literal: true
+
 require "bundler/setup"
+require "rubygems"
 
 load Gem.bin_path("thruster", "thrust")

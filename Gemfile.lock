@@ -85,6 +85,15 @@ GEM
     brakeman (7.0.2)
       racc
     builder (3.3.0)
+    caliber (0.80.0)
+      rubocop (~> 1.75)
+      rubocop-capybara (~> 2.22)
+      rubocop-disable_syntax (~> 0.2)
+      rubocop-packaging (~> 0.6)
+      rubocop-performance (~> 1.25)
+      rubocop-rake (~> 0.7)
+      rubocop-rspec (~> 3.6)
+      rubocop-thread_safety (~> 0.7)
     capybara (3.40.0)
       addressable
       matrix
@@ -262,6 +271,15 @@ GEM
     rubocop-ast (1.44.1)
       parser (>= 3.3.7.2)
       prism (~> 1.4)
+    rubocop-capybara (2.22.1)
+      lint_roller (~> 1.1)
+      rubocop (~> 1.72, >= 1.72.1)
+    rubocop-disable_syntax (0.2.0)
+      lint_roller
+      rubocop (>= 1.72.0)
+    rubocop-packaging (0.6.0)
+      lint_roller (~> 1.1.0)
+      rubocop (>= 1.72.1, < 2.0)
     rubocop-performance (1.25.0)
       lint_roller (~> 1.1)
       rubocop (>= 1.75.0, < 2.0)
@@ -272,10 +290,15 @@ GEM
       rack (>= 1.1)
       rubocop (>= 1.75.0, < 2.0)
       rubocop-ast (>= 1.38.0, < 2.0)
-    rubocop-rails-omakase (1.1.0)
-      rubocop (>= 1.72)
-      rubocop-performance (>= 1.24)
-      rubocop-rails (>= 2.30)
+    rubocop-rake (0.7.1)
+      lint_roller (~> 1.1)
+      rubocop (>= 1.72.1)
+    rubocop-rspec (3.6.0)
+      lint_roller (~> 1.1)
+      rubocop (~> 1.72, >= 1.72.1)
+    rubocop-thread_safety (0.7.2)
+      lint_roller (~> 1.1)
+      rubocop (~> 1.72, >= 1.72.1)
     ruby-progressbar (1.13.0)
     rubyzip (2.4.1)
     securerandom (0.4.1)
@@ -367,6 +390,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   brakeman
+  caliber (~> 0.80.0)
   capybara
   debug
   importmap-rails
@@ -375,7 +399,7 @@ DEPENDENCIES
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.2)
-  rubocop-rails-omakase
+  rubocop-rails
   selenium-webdriver
   solid_cable
   solid_cache
