@@ -71,6 +71,6 @@ group :test do
 end
 
 group :quality do
-  gem "caliber", "~> 0.80.0"
+  gem "caliber", "~> 0.83.0"
   gem "rubocop-rails", require: false
 end
